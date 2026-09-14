@@ -10,7 +10,6 @@ const artists = [
   {name: "BLACKPINK", genre: "K-Pop", description:"BLACKPINK is a South Korean girl group known for their music combining K-Pop, pop, hip-hop and electronic sounds.",},
   {name: "TWICE",genre: "K-Pop", description:"TWICE is a South Korean girl group known for their energetic performances and catchy K-Pop songs.",},
   {name: "keshi", genre: "R&B", description:"keshi is an American singer, songwriter and producer known for his atmospheric R&B and alternative music.",},
-  {name: "21 Savage", genre: "Hip-Hop", description:"21 Savage is a British-American rapper known for his distinctive flow and modern hip-hop sound.",},
   {name: "Drake", genre: "Hip-Hop / R&B", description:"Drake is a Canadian rapper, singer and songwriter known for blending hip-hop and R&B.",},
 ];
 
@@ -60,7 +59,7 @@ export default function Home() {
               <Link
                 key={artist.name}
                 href={`/artists/${encodeURIComponent(artist.name)}`}  //Clicking on an artist will take you to their individual page
-                className="cursor-pointer rounded-xl bg-gray-800 p-6 transition hover:bg-gray-700"
+                className="cursor-pointer rounded-xl bg-gray-800 p-6 transition duration-300 hover:bg-gray-700"
               >
                 <h3 className="text-2xl font-semibold">
                   {artist.name}
